@@ -35,7 +35,7 @@ The Task Scheduling System is a distributed application designed for scheduling 
 ---
 
 ## Database Schema
-
+Database Name **`task_scheduler_db`**
 ### Tables
 1. **`tasks`**
    - Stores task metadata such as execution time, task data, and status.
