@@ -6,7 +6,7 @@ const { ExpressAdapter } = require('@bull-board/express');
 const Queue = require('bull');
 const cron = require('node-cron');
 require('dotenv').config();
-const taskRoutes = require('./routes/taskRoutes');
+const taskRoutes = require('./app/routes/taskRoutes');
 const { scheduleTasks } = require('./scheduler');
 const { workerThread } = require('./worker');
 

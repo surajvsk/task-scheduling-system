@@ -1,4 +1,4 @@
-const {query} = require('../db');
+const {query} = require('../../dbConfig/db');
 
 // Model to handle database operations
 const TaskModel = {

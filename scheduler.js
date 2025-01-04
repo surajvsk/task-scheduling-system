@@ -1,5 +1,5 @@
 // scheduler.js
-const { query } = require('./db');  // Import query and close functions from db.js
+const {query} = require('./dbConfig/db'); // Import query and close functions from db.js
 const { Queue } = require('bullmq');
 const { Redis } = require('ioredis');
 require('dotenv').config();
