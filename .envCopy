@@ -1,0 +1,16 @@
+# PostgreSQL Database Configuration
+PG_USER=postgres               # Database user
+PG_PASSWORD=root               # Database password
+PG_HOST=localhost              # Database host
+PG_PORT=5432                   # Database port
+PG_DATABASE=task_scheduler_db      # Database name
+PG_SSL=false                   # Set to true if SSL is required
+
+# Additional Application Configuration
+NODE_ENV=development           # Application environment (e.g., development, production)
+APP_PORT=3000                  # Port for your application server
+LOG_LEVEL=info                 # Logging level (e.g., debug, info, warn, error)
+
+REDIS_HOST=localhost           # Redis host
+REDIS_PORT=6379                # Redis port
+
