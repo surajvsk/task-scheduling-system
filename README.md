@@ -214,8 +214,7 @@ This step is **mandatory** for setting up the database, as no migration tool is 
 You can view all the running tasks and job queues through the BullMQ dashboard by adding the following route to your server:
 
 ```javascript
-app.use('/admin/queues', serverAdapter.getRouter());
-http://localhost:3000/admin/queues
+['BullMQ Dashboard'](http://localhost:3000/admin/queues)
 ```
 
 This will expose a web interface where you can monitor and manage job queues. Make sure to access it via the `/admin/queues` route on your application.
