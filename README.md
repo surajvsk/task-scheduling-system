@@ -177,25 +177,37 @@ The Task Scheduling System is a distributed application designed for scheduling 
    REDIS_PORT=6379
    ```
 
-4. Run database migrations:
-   ```bash
-   npm run migrate
-   ```
+4. Run database sql file:
+ Here's the updated section for your README with the clarification about running the SQL script:
+
+---
+
+### 4. Run Database SQL File
+Manually create the required database tables by executing the provided SQL script. Ensure that you have configured your PostgreSQL database connection correctly before proceeding.
+
+Run the following command in your terminal:
+
+```bash
+psql -h <DB_HOST> -U <DB_USER> -d <DB_NAME> -f dbscript.sql
+```
+
+- Replace `<DB_HOST>`, `<DB_USER>`, and `<DB_NAME>` with your database host, username, and database name.
+- The `dbscript.sql` file contains all necessary SQL commands to create the required tables and schema for the application.
+
+Alternatively, if you are using a GUI tool (e.g., pgAdmin):
+1. Open the tool and connect to your PostgreSQL instance.
+2. Open the Query Tool and load the contents of `dbscript.sql`.
+3. Execute the script to create the tables.
+
+This step is **mandatory** for setting up the database, as no migration tool is used in this project.
 
 5. Start the server:
    ```bash
-   npm start
+   node app
    ```
 
 ---
 
-## Testing
-- Run unit tests:
-  ```bash
-  npm test
-  ```
-
----
 
 ## Future Improvements
 1. Implement user authentication and authorization for task management.
